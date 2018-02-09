@@ -1,0 +1,79 @@
+---
+layout: page
+---	  
+<article>
+<h2>Introduction</h2>
+<p>
+The Summer School will include some hands-on tutorials in which we will build some simple Gaussian process models.
+The tutorials will be in Python, featuring the GPy package that has been developed by the Machine Learning group in Sheffield.
+</p>
+<p>
+Prior Python programming skills are not needed, however, Python 3 needs to be installed with the following packages:
+scipy, matplotlib, nose, and GPy.
+</p>
+<p>
+Please bring your own laptop.
+</p>
+
+<h1 id="installing-python">Installing Python</h1>
+
+<p>We highly recommend that you install an integrated Python environment such as <a href="https://store.
+continuum.io/cshop/anaconda">Anaconda</a>. This will automatically install the latest versions of <code>numpy</code> and <code>scipy</code>.</p>
+
+<h3 id="windows">Windows</h3>
+
+<p>The easiest way to get a Python environment on Windows is to install an integrated Python package
+such as Anacoda:</p>
+
+<ol>
+  <li>
+    <p>Download and install the free version of Anaconda according to your operating system from
+<a href="https://store.continuum.io/cshop/anaconda">https://store.continuum.io/cshop/anaconda</a></p>
+  </li>
+  <li>
+    <p>Open a (new) terminal window:
+Navigate to Applications/Accessories/cmd, or
+open <strong>anaconda Command Prompt</strong> from windows start</p>
+  </li>
+</ol>
+
+<p>You should now be able to launch an IPython interpreter or launch a <a href="http://jupyter.org/">jupyter</a> notebook.</p>
+
+<p>I found that I had to also install the <a href="http://landinghub.visualstudio.com/visual-cpp-build-tools">Visual C++ Build Tools</a> before I could install GPy, but you may already have that installed.</p>
+
+<h3 id="linux--mac-os-x">Linux / Mac OS X</h3>
+<p>The installation file of Anaconda for Linux and Mac OS X can also be found on their website <a href="https:
+//store.continuum.io/cshop/anaconda">https:
+//store.continuum.io/cshop/anaconda</a>. Following the installation instructions on their website should be straight-forward.</p>
+
+<h1 id="installing-gpy">Installing GPy</h1>
+
+<p>The current version of GPy requires a new version of scipy (<code>scipy&gt;=0.16</code>). Make sure you get the
+latest version of scipy installed. To update scipy in Anaconda, simply type <code>conda update scipy</code> (if you have just installed Python for the first time, then you should already be up to date). After
+installing a Python environment with numpy and scipy, GPy can be easily installed via pip:</p>
+
+<pre><code>$ pip install GPy
+</code></pre>
+
+<p>To make sure the installation is successful, enter the following in the IPython prompt:</p>
+
+<pre><code>$ import GPy
+$ GPy.tests()
+</code></pre>
+
+<h1>Lab Sheets</h1>
+On the day we will get started on the lab sheets;
+<ul>
+  <li>Day 1 <a href="http://gpss.cc/gpss18/labs/GPSS_Lab1_2018.ipynb">labsheet</a> (answers - will be uploaded later)</li>
+  <li>Day 2 <a href="http://gpss.cc/gpss18/labs/GPSS_Lab2_2018.ipynb">labsheet</a> (answers - will be uploaded later)</li>
+  <li>Day 3 <a href="http://gpss.cc/gpss18/labs/GPSS_Lab3_2018.ipynb">labsheet</a> (answers - will be uploaded later)</li>  
+</ul>
+  
+To use these notebooks, right click and save as, then, for example, in linux, one would open a terminal, change directory to where the notebooks are and launch the notebook server. For example;
+  
+  <pre><code>$ cd ~/Downloads
+$ jupyter notebook
+  </code></pre>
+ 
+ A browser window should open, connected to the notebook server.
+  

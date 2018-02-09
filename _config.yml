@@ -1,0 +1,81 @@
+# Site settings
+title: Gaussian Process and Uncertainty Quantification Summer School, 2018
+email: 
+description: > # this means to ignore newlines until "baseurl:"
+  Write a description for your conference or meeting here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/gpss18" # the subpath of your site, e.g. /blog/
+url: "http://gpss.cc" # the base hostname & protocol for your site
+twitter_username: datascienceshef
+github_username:  gpschool
+
+
+youtube:
+  height: 315
+  width: 560
+
+github:
+  edit: true
+  repository: gpss18
+  
+markdown: kramdown
+
+# Build settings
+future: true
+
+permalink: "/:categories/:title.html"
+banner: 
+
+analytics:
+ google:
+   tracking_id: UA-62991754-1 # Google tracking ID if applicable
+
+youtube:
+  height: 315
+  width: 560
+
+conference:
+  draft: false
+  hide_tentative: true
+  hosts:
+  
+  room: Pam Liversidge Building, PLB-E05
+  venue: The University of Sheffield
+  location: Sheffield, UK
+  name: Gaussian Process Summer School
+  year: 2018
+  month: September
+  dates:
+  - 2018-09-10
+  - 2018-09-11
+  - 2018-09-12
+  - 2018-09-13
+  organizers:
+  - {given: Javier, family: Gonzalez, url: "http://javiergonzalezh.github.io/", institute: Amazon Research Cambridge}
+  - {given: Mauricio, family: Alvarez, url: "https://sites.google.com/site/maalvarezl/", institute: University of Sheffield}
+  - {given: Richard, family: Wilkinson, url: "http://r-wilkinson.staff.shef.ac.uk/", institute: University of Sheffield}
+  - {given: Jeremy, family: Oakley, url: "http://www.jeremy-oakley.staff.shef.ac.uk/", institute: University of Sheffield}
+  - {given: Neil D., family: Lawrence, url: "http://inverseprobability.com", institute: Amazon Research Cambridge and University of Sheffield}
+  - {family: Sheffield ML Group, url: "http://sheffieldml.github.io"}
+  sponsors:
+  - name: The Open Data Science Initiative
+    url: http://opendsi.cc
+
+previous_meeting:
+  name: Previous School
+  url: "http://gpss.cc/gpss17"
+
+map:
+  show: true  
+  mapbox:
+    latitude: 53.385396 # latitude of map center
+    longitude: -1.472726 # longitude of map center
+    map_id1: maalvarezl # mapbox id1
+    map_id2: cj6hz56fb4q9l2rpajqiqw5ki # mapbox id2
+    fresh: true
+    title: false
+    access_token: pk.eyJ1IjoibWFhbHZhcmV6bCIsImEiOiJjajY1Nmo1b3gxb2d2Mndub2dyeDNsa2IzIn0.qLCz36sKjWARW8EBSy2fAQ # mapbox access token
+    zoom_level: 14.5
+    width: 100%
+    height: 500px
