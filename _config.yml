@@ -47,10 +47,10 @@ conference:
   year: 2018
   month: September
   dates:
-  - 2018-09-10
-  - 2018-09-11
-  - 2018-09-12
-  - 2018-09-13
+  - 2018-09-03
+  - 2018-09-04
+  - 2018-09-05
+  - 2018-09-06
   organizers:
   - {given: Javier, family: Gonzalez, url: "http://javiergonzalezh.github.io/", institute: Amazon Research Cambridge}
   - {given: Mauricio, family: Alvarez, url: "https://sites.google.com/site/maalvarezl/", institute: University of Sheffield}
