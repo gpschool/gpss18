@@ -4,7 +4,7 @@ layout: page
 
 <article>
 	  
-  <p><strong>{{ site.conference.name }} took place in {{ site.conference.location }} from {{ site.conference.dates[0] | date: "%A %B, %-d %Y" }} to  {{ site.conference.dates.last | date: "%A %B, %-d %Y" }}.</strong></p>
+  <p><strong>{{ site.conference.name }} is taking place in {{ site.conference.location }} from {{ site.conference.dates[0] | date: "%A %B, %-d %Y" }} to  {{ site.conference.dates.last | date: "%A %B, %-d %Y" }}.</strong></p>
   {{ content }}
     
   {% assign sponsorlen = {{ site.conference.sponsors | size }} %}
