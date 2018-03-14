@@ -63,8 +63,8 @@ conference:
     url: http://opendsi.cc
 
 previous_meeting:
-  name: Previous School
-  url: "http://gpss.cc/gpss17"
+  name: Past Meetings
+  url: "http://gpss.cc/past_meetings.html"
 
 map:
   show: true  
