@@ -16,7 +16,7 @@ Academic                 |  260 |  420
 Industrial Club          |  260 |  420
 Industrial and Other Non-Academic  | 730 |  730
 
-**Early bird registration before 15th July**
+**Early bird registration before 1st July**
 
 Follow the links below to register. Academics and members of our
 industrial club can register at the reduced rate. Other registrants need
