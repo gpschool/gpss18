@@ -5,6 +5,7 @@ tagline: joining our schools
 main: Y
 ---
 
+**This year's event is fully booked already**
 
 Registration for the Gaussian Processes and Uncertainty Quantification Summer School, 2018.
 
@@ -15,9 +16,6 @@ Attendee                         | Early Bird Rate | Regular Rate
 Academic                 |  260 |  420
 Industrial Club          |  260 |  420
 Industrial and Other Non-Academic  | 730 |  730
-
-
-**This year's event is fully booked already**
 
 <!---
 
