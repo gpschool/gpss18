@@ -22,7 +22,7 @@ Follow the link below to register. Academics and members of our
 industrial club can register at the reduced rate. Other registrants need
 to register at the full cost.
 
-[**Link to registration**](https://onlineshop.shef.ac.uk/conferences-and-events/faculty-of-engineering/computer-science/summer-school-in-gaussian-processes-and-uncertainty-quantification-2018)
+**The event is fully booked now**
 
 If you need a visa to come to UK, please apply for a Standard 
 visa. More details regards the visa application can be found
