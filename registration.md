@@ -16,15 +16,20 @@ Academic                 |  260 |  420
 Industrial Club          |  260 |  420
 Industrial and Other Non-Academic  | 730 |  730
 
+
+**This year's event is fully booked already**
+
+<!---
+
 **Early bird registration before 1st July**
 
 Follow the link below to register. Academics and members of our
 industrial club can register at the reduced rate. Other registrants need
 to register at the full cost.
 
-**The event is fully booked now**
+-->
 
-If you need a visa to come to UK, please apply for a Standard 
+If you registered and need a visa to come to UK, please apply for a Standard 
 visa. More details regards the visa application can be found
 [here](https://www.gov.uk/standard-visitor-visa). If you need an
-invitation letter for your visa application, please [contact us](mailto:mauricio.alvarez@sheffield.ac.uk).)
+invitation letter for your visa application, please [contact us](mailto:mauricio.alvarez@sheffield.ac.uk).
