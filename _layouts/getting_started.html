@@ -3,8 +3,6 @@ layout: page
 ---
 <article>
 
-    <h1 id="Getting-Started">Getting Started</h1>
-
     <h2 id="Introduction">Introduction</h2>
 
     <p>The Gaussian Process Summer School will include some hands-on tutorials in which we will build some simple Gaussian process models. The tutorials will be in Python, featuring the open source <em>GPy package</em> that has been developed by the Machine Learning group at the University of Sheffield.</p>
@@ -70,7 +68,7 @@ layout: page
     <p>Installing <code>GPy</code> will also install its other dependencies, such as <code>paramz</code>, so you don't need to worry about these. You can test that the installation of <code>GPy</code> is working by running the following in a Python shell:</p>
 
     <pre><code>&gt;&gt;&gt; import GPy
-    &gt;&gt;&gt; GPy.tests()</code></pre>
+&gt;&gt;&gt; GPy.tests()</code></pre>
     <p>This should run through the testing sequence.</p>
 
 
@@ -114,7 +112,7 @@ layout: page
     <p>Simply activate the environment, and run the following command:</p>
 
     <pre><code>$ python -m ipykernel install --user --name python_3_gpss --display-name "Python 3 (GPSS)"
-    $ deactivate</code></pre>
+$ deactivate</code></pre>
     <p><em>Remember that, for Linux or macOS, you must prepend <code>deactivate</code> with <code>source</code></em>.</p>
     <p>We have deactivated, as we can now access the environment as a Jupyter kernel regardless of whether the environment is activated in the terminal -- this is particularly convenient.</p>
     <p>If you run <code>jupyter notebook</code> now and open a notebook, you should be able to see the new kernel in the dropdown list when selecting a kernel. You should select your environment, the name of which will be shown in the top right of the notebook. <strong>If you select the wrong kernel, or Jupyter chooses the wrong one, you can change it by selecting the correct one from the <code>Change kernel &gt;</code> menu in the <code>Kernel</code> taskbar at the top</strong>.</p>
