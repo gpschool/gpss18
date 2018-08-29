@@ -1,79 +1,127 @@
 ---
 layout: page
----	  
+---
 <article>
-<h2>Introduction</h2>
-<p>
-The Summer School will include some hands-on tutorials in which we will build some simple Gaussian process models.
-The tutorials will be in Python, featuring the GPy package that has been developed by the Machine Learning group in Sheffield.
-</p>
-<p>
-  Prior Python programming skills are not needed, however, <b>Python 3</b> needs to be installed with the following packages:
-scipy, matplotlib, nose, and GPy.
-</p>
-<p>
-Please bring your own laptop.
-</p>
 
-<h1 id="installing-python">Installing Python</h1>
+    <h1 id="Getting-Started">Getting Started</h1>
 
-<p>We highly recommend that you install an integrated Python environment such as <a href="https://store.
-continuum.io/cshop/anaconda">Anaconda</a>. This will automatically install the latest versions of <code>numpy</code> and <code>scipy</code>.</p>
+    <h2 id="Introduction">Introduction</h2>
 
-<h3 id="windows">Windows</h3>
+    <p>The Gaussian Process Summer School will include some hands-on tutorials in which we will build some simple Gaussian process models. The tutorials will be in Python, featuring the open source <em>GPy package</em> that has been developed by the Machine Learning group at the University of Sheffield.</p>
 
-<p>The easiest way to get a Python environment on Windows is to install an integrated Python package
-such as Anacoda:</p>
+    <p><strong>Please bring your own laptop.</strong> Prior Python programming skills are not required, however you should ensure that you have installed the appropriate version of Python and the packages/libraries we will be using:</p>
 
-<ol>
-  <li>
-    <p>Download and install the free version of Anaconda according to your operating system from
-<a href="https://store.continuum.io/cshop/anaconda">https://store.continuum.io/cshop/anaconda</a></p>
-  </li>
-  <li>
-    <p>Open a (new) terminal window:
-Navigate to Applications/Accessories/cmd, or
-open <strong>anaconda Command Prompt</strong> from windows start</p>
-  </li>
-</ol>
+    <ul>
+        <li><strong>Python 3.5</strong> (or a later version)</li>
+        <li><code>numpy</code></li>
+        <li><code>scipy</code></li>
+        <li><code>matplotlib</code></li>
+        <li><code>GPy</code></li>
+        <li><code>jupyter</code></li>
+    </ul>
+    <p>We highly recommend that you install an integrated Python environment, in particular <a target="_blank" href="https://store.continuum.io/cshop/anaconda">Anaconda</a> which will allow for easy installation of packages. It also comes with the latest versions of <code>numpy</code> and <code>scipy</code>.</p>
+    <p>All labs are in a format called "<em>notebooks</em>", which can be run using <a target="_blank" href="http://jupyter.org/index.html">Jupyter</a>. These are worksheets that can execute Python code in blocks in your web browser.</p>
+    <p>The following instructions will tell you how to install and setup the Python library for the tutorials, and some information on installing and running Jupyter.</p>
 
-<p>You should now be able to launch an IPython interpreter or launch a <a href="http://jupyter.org/">jupyter</a> notebook.</p>
+    <h2 id="Installing-Python-with-Anaconda">Installing Python with Anaconda</h2>
 
-<p>I found that I had to also install the <a href="http://landinghub.visualstudio.com/visual-cpp-build-tools">Visual C++ Build Tools</a> before I could install GPy, but you may already have that installed.</p>
+    <p>Anaconda is a distribution of the Python prorgamming language that comes integrated with a number of precompiled libraries, and its own package and environment manager, called <code>conda</code>. It freely allows use of installation of packages and libraries via <code>conda</code> or <code>pip</code>. We recommend using Anaconda to manage your Python language environment, <em>particularly if you are new to Python</em>, and the following instructions will assume you are using Anaconda. If you are using a different Python distribution, you may have to tailor to following instructions, but you should ensure that you are using Python 3.5+.</p>
 
-<h3 id="linux--mac-os-x">Linux / Mac OS X</h3>
-<p>The installation file of Anaconda for Linux and Mac OS X can also be found on their website <a href="https:
-//store.continuum.io/cshop/anaconda">https:
-//store.continuum.io/cshop/anaconda</a>. Following the installation instructions on their website should be straight-forward.</p>
+    <h3 id="Installing">Installing</h3>
 
-<h1 id="installing-gpy">Installing GPy</h1>
+    <p>The easiest way to get a working Python environment is to install Anaconda. It is fairly straightforward to install, but can take some time so you must make sure this is done before the lab.</p>
 
-<p>The current version of GPy requires a new version of scipy (<code>scipy&gt;=0.16</code>). Make sure you get the
-latest version of scipy installed. To update scipy in Anaconda, simply type <code>conda update scipy</code> (if you have just installed Python for the first time, then you should already be up to date). After
-installing a Python environment with numpy and scipy, GPy can be easily installed via pip:</p>
+    <ol>
+        <li>Download and install the free version of Anaconda from its webpage: <a target="_blank" href="https://www.anaconda.com/download">https://www.anaconda.com/download</a>, selecting the <em>Python 3.6 version</em> appropriate for your operating system
+            <ul>
+                <li>Windows: the installer will be a <code>.exe</code> executable, and you can follow the setup as instructed</li>
+                <li>Linux: the installer is a <code>.sh</code> shell script, and you can run it in the terminal and follow the setup as instructed
+                    <ul>
+                        <li>Note you may have to enable execution of the file, by either
+                            <ul>
+                                <li>Right click the file and select Properties, and under <code>Permissions</code> check "Allow executing file as program"</li>
+                                <li><code>$ chmod +x /path/to/installationfile.sh</code></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>macOS: the installer is a <code>.pkg</code> software package, and you can follow the setup as instructed</li>
+            </ul>
+        </li>
+        <li>Update Anaconda, <code>numpy</code>, <code>scipy</code>, and <code>matplotlib</code>: open a command prompt or terminal and execute the following commands
+            <ol>
+                <li><code>conda update -y anaconda</code></li>
+                <li><code>conda update -y numpy scipy matplotlib</code></li>
+            </ol>
+        </li>
+        <li>Update <code>jupyter</code>
+            <ol>
+                <li><code>conda update -y jupyter</code></li>
+                <li>If you are not using Anaconda, you can install <code>jupyter</code> by calling <code>$ python3 -m pip install juypter</code></li>
+            </ol>
+        </li>
+    </ol>
 
-<pre><code>$ pip install GPy
-</code></pre>
+    <h2 id="Installing-GPy">Installing GPy</h2>
 
-<p>To make sure the installation is successful, enter the following in the IPython prompt:</p>
+    <p><em><strong>Important</strong>: (advanced) before installing <code>GPy</code>, you may want to create a special Python environment for the summer school. Complete the steps to create a new environment (below) before performing the following. See <a href="#Advanced%3A-Creating-a-Python-Environment-for-the-Labs">Advanced: Creating a Python Environment for the Labs</a> for details.</em></p>
+    <p>We will install <code>GPy</code> using <code>pip</code>, by performing the following command in the terminal/command prompt:</p>
+    <p><code>$ pip install GPy</code></p>
+    <p>Installing <code>GPy</code> will also install its other dependencies, such as <code>paramz</code>, so you don't need to worry about these. You can test that the installation of <code>GPy</code> is working by running the following in a Python shell:</p>
 
-<pre><code>$ import GPy
-$ GPy.tests()
-</code></pre>
+    <pre><code>&gt;&gt;&gt; import GPy
+    &gt;&gt;&gt; GPy.tests()</code></pre>
+    <p>This should run through the testing sequence.</p>
 
-<h1>Lab Sheets</h1>
-On the day we will get started on the lab sheets;
-<ul>
-  <li>Day 1 <a href="http://gpss.cc/gpss18/labs/GPSS_Lab1_2018.ipynb">labsheet</a> (will be uploaded nearer the time)</li>
-  <li>Day 2 <a href="http://gpss.cc/gpss18/labs/GPSS_Lab2_2018.ipynb">labsheet</a> (will be uploaded nearer the time)</li>
-  <li>Day 3 <a href="http://gpss.cc/gpss18/labs/GPSS_Lab3_2018.ipynb">labsheet</a> (will be uploaded nearer the time)</li>  
-</ul>
-  
-To use these notebooks, right click and save as, then, for example, in linux, one would open a terminal, change directory to where the notebooks are and launch the notebook server. For example;
-  
-  <pre><code>$ cd ~/Downloads
-$ jupyter notebook
-  </code></pre>
- 
- A browser window should open, connected to the notebook server.
-  
+
+    <h2 id="Running-the-Lab-Sheets">Running the Lab Sheets</h2>
+
+    <p>On the day of each tutorial, the respective lab sheet will be made available to download here:</p>
+    <ul>
+        <li>Day 1: Gaussian Process Regression <a target="_blank" href="http://gpss.cc/gpss18/labs/GPSS_Lab1_2018.ipynb">download lab sheet (.ipynb)</a></li>
+        <li>Day 2: GPs for Non-Gaussian Likelihoods and Big Data <a target="_blank" href="http://gpss.cc/gpss18/labs/GPSS_Lab2_2018.ipynb">download lab sheet (.ipynb)</a></li>
+        <li>Day 3: Bayesian Optimisation with Gaussian Processes <a target="_blank" href="http://gpss.cc/gpss18/labs/GPSS_Lab3_2018.ipynb">download lab sheet (.ipynb)</a></li>
+    </ul>
+
+    <p>To use these notebooks, you should download the respective lab sheet. In a terminal window, navigate to the files path (using the <code>cd</code> command) and run the command <code>jupyter notebook</code>. This will open a browser window connecting to the (locally hosted) notebook server. The notebook should be visible in the file list.</p>
+    <p>Typically, Jupyter will launch the server at <a target="_blank" href="http://localhost:8888/tree">http://localhost:8888/tree</a>, and you can navigate to it this way, should you accidentally close the window.</p>
+
+    <h2 id="Advanced:-Creating-a-Python-Environment-for-the-Labs">Advanced: Creating a Python Environment for the Labs</h2>
+
+    <p>If may be preferable to create a custom 'virtual' Python environment for use in the labs. A virtual environment gives you an isolated working copy of Python with its own files and packages, allowing you to specify versions of the Python executable and packages without affecting your main distribution. For example, if you predominantly use Python 2, you may want to create a Python 3 environment seperately for using the lab sheets (which make use of functionality not available in Python 2).</p>
+    <p>The following instructions assume you are using <strong>Anaconda</strong>, but if not you may be able to replicate the behaviour using <a target="_blank" href="https://virtualenv.pypa.io/en/stable/"><code>virtualenv</code></a>.</p>
+
+    <h3 id="Creating-a-New-Environment-with-Conda">Creating a New Environment with Conda</h3>
+
+    <p>Full details of the functionality of <code>conda</code>'s virtual environment are available on its <a target="_blank" href="https://conda.io/docs/user-guide/tasks/manage-environments.html">documentation page</a>. The following instructions should get you a working environment with all the necessary features using a terminal. It is also possible to use Anaconda Navigator, if you have it installed, to perform these steps using a graphical user interface.</p>
+    <p>In the following steps, we will name our environment "<code>python_3_gpss</code>", but you can name it whatever is most appropriate (just make sure you replace any mention of <code>python_3_gpss</code> with your preferred name). Likewise, we will use Python 3.6, though 3.5 may also be used, in which case replace <code>3.6</code> with <code>3.5</code> as appropriate. Setting the version is particularly important if you use Python 2 with Anaconda by default.</p>
+    <p>In a command prompt / terminal, execute the following line:</p>
+
+    <pre><code>$ conda create -y --name python_3_gpss python=3.6 anaconda</code></pre>
+    <p>This may take a while to install, as it is replicating the default Anaconda packages in the new environment (alternatively, you can customise the packages installed, but this is not recommended).</p>
+    <p>Next, you must "activate" the new environment. While an environment is activated (in a given terminal window), we will be able to access the <code>python</code> executable and install any packages by simply calling <code>python</code> and <code>pip</code>. Note that activation is <em>slightly</em> different for Windows:</p>
+    <p><strong>Windows</strong>:</p>
+
+    <pre><code>$ activate python_3_gpss</code></pre>
+    <p><strong>Linux / macOS</strong>:</p>
+
+    <pre><code>$ source activate python_3_gpss</code></pre>
+    <p>You will now see that the terminal prompt is prefixed by <code>(python_3_gpss)</code>. While this is here, we are in the activated environment, and you can now install <code>GPy</code> as described above. Make sure to run the tests, as described, to confirm the installation.</p>
+    <p>Note that to deactivate the environment and return to the default Python environment, simply execute the command <code>deactivate</code> / <code>source deactivate</code> for Windows / Linux respectively.</p>
+
+    <h3 id="Using-the-New-Environment-in-Jupyter">Using the New Environment in Jupyter</h3>
+    <p>By default, we cannot use the environment in Jupyter (and so cannot use it to run the labs). However, it is relatively simple to add the new environment as a "kernel" for Jupyter to use.</p>
+    <p>Simply activate the environment, and run the following command:</p>
+
+    <pre><code>$ python -m ipykernel install --user --name python_3_gpss --display-name "Python 3 (GPSS)"
+    $ deactivate</code></pre>
+    <p><em>Remember that, for Linux or macOS, you must prepend <code>deactivate</code> with <code>source</code></em>.</p>
+    <p>We have deactivated, as we can now access the environment as a Jupyter kernel regardless of whether the environment is activated in the terminal -- this is particularly convenient.</p>
+    <p>If you run <code>jupyter notebook</code> now and open a notebook, you should be able to see the new kernel in the dropdown list when selecting a kernel. You should select your environment, the name of which will be shown in the top right of the notebook. <strong>If you select the wrong kernel, or Jupyter chooses the wrong one, you can change it by selecting the correct one from the <code>Change kernel &gt;</code> menu in the <code>Kernel</code> taskbar at the top</strong>.</p>
+
+    <h3 id="Deleting-an-Environment">Deleting an Environment</h3>
+
+    <p>If you need to delete a created environment, for example if you make a mistake and want to start afresh, you can simply use the <code>remove</code> command in <code>conda</code>:</p>
+
+    <pre><code>$ conda remove --name python_3_gpss --all</code></pre>
+</article>
