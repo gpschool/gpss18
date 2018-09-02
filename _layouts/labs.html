@@ -1,18 +1,19 @@
 ---
 layout: page
 ---
-<!--style>
-    table {
+<style>
+    .notebook_links {
         border-collapse: collapse;
     }
-    table, th, td {
+    .notebook_links, .notebook_links th, .notebook_links td {
         border:1px solid #000;
     }
-    th, td {
+    .notebook_links th, .notebook_links td {
         padding: 5px;
         font-size: 14pt;
     }
-</style-->
+</style>
+
 <article>
 
     <h1 id="Tutorials">Tutorials</h1>
@@ -27,7 +28,7 @@ layout: page
 
     <p>This lab is designed to introduce Gaussian processes in a practical way, illustrating the concepts introduced in the first two lectures. The key aspects of Gaussian process regression are covered: the covariance function (aka kernels); sampling a Gaussian process; and the regression model. The notebook will introduce the open source Python library GPy which handles the kernels, regression and optimisation of hyperparameter, allowing us to easily access the results we want.</p>
 
-    <table style="border">
+    <table class="notebook_links">
         <thead><tr>
             <th>Lab</th>
             <th>Answers</th>
@@ -44,7 +45,7 @@ layout: page
 
     <p>This lab is an extension on the work introduced in Lab 1 of the summer school. It is more advanced, and you should make sure you've completed Lab 1 before attempting. It is designed to demonstrate the advantage of using models when we have only a small number of observations of a latent function.</p>
 
-    <table style="border">
+    <table class="notebook_links">
         <thead><tr>
             <th>Lab</th>
             <th>Answers</th>
@@ -63,7 +64,7 @@ layout: page
     <p>As with Lab 1, the notebook uses GPy for handling the regression model and likelihoods.</p>
     <p>You will need to also download the <tt>banana.csv</tt> dataset for one of the examples in the lab.</p>
 
-    <table>
+    <table class="notebook_links">
         <thead>
             <tr>
                 <th>Lab</th>
@@ -87,7 +88,7 @@ layout: page
 <p>You will also need to download the Olympic Sprints dataset for the examples in this notebook.</p>
 
 <p></p>
-<table>
+<table class="notebook_links">
     <thead>
         <tr>
             <th>Lab</th>
@@ -108,7 +109,8 @@ layout: page
 <h2 id="Lab-3-:-Bayesian-Optimisation">Lab 3 : Global Optimisation with Gaussian Processes</h2>
 
 <p>This lab introduces the basic concepts of Bayesian optimisation with GPyOot. The student will have to build and compare different models and aquisition functions to solve several optimisation problems.</p>
-<table>
+
+<table class="notebook_links">
     <thead><tr>
         <th>Lab</th>
         <th>Answers</th>
@@ -121,11 +123,12 @@ layout: page
     </tr>
 </tbody>
 </table>
+
 <h3 id="Lab-3-Extra-:-Gaussian-Process-Latent-Variable-Model">Lab 3 Extra : Dimensionality Reduction using Gaussian Processes</h3>
 
 <p>This lab focusses on using Gaussian processes for unsupervised analysis. We will apply dimensionality reduction to a dataset of images and compare it to Gaussian process latent variable modeling.</p>
 
-<table style="border">
+<table class="notebook_links">
     <thead><tr>
         <th>Lab</th>
         <th>Answers</th>
