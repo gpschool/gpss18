@@ -53,7 +53,7 @@ conference:
   - 2018-09-06
   organizers:
   - {given: Javier, family: Gonzalez, url: "http://javiergonzalezh.github.io/", institute: Amazon Research Cambridge}
-  - {given: Mauricio, family: Alvarez, url: "https://sites.google.com/site/maalvarezl/", institute: University of Sheffield}
+  - {given: Mauricio, family: Alvarez, url: "https://maalvarezl.github.io/", institute: University of Sheffield}
   - {given: Richard, family: Wilkinson, url: "http://r-wilkinson.staff.shef.ac.uk/", institute: University of Sheffield}
   - {given: Jeremy, family: Oakley, url: "http://www.jeremy-oakley.staff.shef.ac.uk/", institute: University of Sheffield}
   - {given: Neil D., family: Lawrence, url: "http://inverseprobability.com", institute: Amazon Research Cambridge and University of Sheffield}
