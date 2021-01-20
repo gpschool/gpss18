@@ -9,13 +9,19 @@ baseurl: "/gpss18" # the subpath of your site, e.g. /blog/
 url: "http://gpss.cc" # the base hostname & protocol for your site
 twitter_username: datascienceshef
 github_username:  gpschool
+plugins:
+- jekyll-feed
+- jekyll-seo-tag
+- jekyll-remote-theme
+remote_theme: lawrennd/proceedings
+style: gpss
 
 
 youtube:
   height: 315
   width: 560
 
-github:
+ghub:
   edit: true
   repository: gpss18
   
@@ -39,7 +45,8 @@ conference:
   draft: false
   hide_tentative: true
   hosts:
-  
+  short_name: GPSS
+  full_name:  Gaussian Process and Uncertainty Quantification Summer School  
   room: Pam Liversidge Building, PLB-E05
   venue: The University of Sheffield
   location: Sheffield, UK
@@ -51,13 +58,15 @@ conference:
   - 2018-09-04
   - 2018-09-05
   - 2018-09-06
-  organizers:
-  - {given: Javier, family: Gonzalez, url: "http://javiergonzalezh.github.io/", institute: Amazon Research Cambridge}
-  - {given: Mauricio, family: Alvarez, url: "https://maalvarezl.github.io/", institute: University of Sheffield}
-  - {given: Richard, family: Wilkinson, url: "http://r-wilkinson.staff.shef.ac.uk/", institute: University of Sheffield}
-  - {given: Jeremy, family: Oakley, url: "http://www.jeremy-oakley.staff.shef.ac.uk/", institute: University of Sheffield}
-  - {given: Neil D., family: Lawrence, url: "http://inverseprobability.com", institute: Amazon Research Cambridge and University of Sheffield}
-  - {family: Sheffield ML Group, url: "http://sheffieldml.github.io"}
+  chairs:
+  - type: Organizers
+    people:
+    - {given: Javier, family: Gonzalez, url: "http://javiergonzalezh.github.io/", institute: Amazon Research Cambridge}
+    - {given: Mauricio, family: Alvarez, url: "https://maalvarezl.github.io/", institute: University of Sheffield}
+    - {given: Richard, family: Wilkinson, url: "http://r-wilkinson.staff.shef.ac.uk/", institute: University of Sheffield}
+    - {given: Jeremy, family: Oakley, url: "http://www.jeremy-oakley.staff.shef.ac.uk/", institute: University of Sheffield}
+    - {given: Neil D., family: Lawrence, url: "http://inverseprobability.com", institute: Amazon Research Cambridge and University of Sheffield}
+    - {family: Sheffield ML Group, url: "http://sheffieldml.github.io"}
   sponsors:
   - name: The Open Data Science Initiative
     url: http://opendsi.cc
