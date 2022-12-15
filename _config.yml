@@ -6,14 +6,14 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/gpss18" # the subpath of your site, e.g. /blog/
-url: "http://gpss.cc" # the base hostname & protocol for your site
+url: "https://gpss.cc" # the base hostname & protocol for your site
 twitter_username: datascienceshef
 github_username:  gpschool
 plugins:
 - jekyll-feed
 - jekyll-seo-tag
 - jekyll-remote-theme
-remote_theme: lawrennd/proceedings
+remote_theme: gpschool/jekyll-theme
 style: gpss
 
 
@@ -61,19 +61,19 @@ conference:
   chairs:
   - type: Organizers
     people:
-    - {given: Javier, family: Gonzalez, url: "http://javiergonzalezh.github.io/", institute: Amazon Research Cambridge}
+    - {given: Javier, family: Gonzalez, url: "https://javiergonzalezh.github.io/", institute: Amazon Research Cambridge}
     - {given: Mauricio, family: Alvarez, url: "https://maalvarezl.github.io/", institute: University of Sheffield}
-    - {given: Richard, family: Wilkinson, url: "http://r-wilkinson.staff.shef.ac.uk/", institute: University of Sheffield}
-    - {given: Jeremy, family: Oakley, url: "http://www.jeremy-oakley.staff.shef.ac.uk/", institute: University of Sheffield}
-    - {given: Neil D., family: Lawrence, url: "http://inverseprobability.com", institute: Amazon Research Cambridge and University of Sheffield}
-    - {family: Sheffield ML Group, url: "http://sheffieldml.github.io"}
+    - {given: Richard, family: Wilkinson, url: "https://r-wilkinson.staff.shef.ac.uk/", institute: University of Sheffield}
+    - {given: Jeremy, family: Oakley, url: "https://www.jeremy-oakley.staff.shef.ac.uk/", institute: University of Sheffield}
+    - {given: Neil D., family: Lawrence, url: "https://inverseprobability.com", institute: Amazon Research Cambridge and University of Sheffield}
+    - {family: Sheffield ML Group, url: "https://sheffieldml.github.io"}
   sponsors:
   - name: The Open Data Science Initiative
-    url: http://opendsi.cc
+    url: https://opendsi.cc
 
 previous_meeting:
-  name: Past Meetings
-  url: "http://gpss.cc/past_meetings.html"
+  name: GPSS 2017
+  url: "https://gpss.cc/gpss17"
 
 map:
   show: true  
